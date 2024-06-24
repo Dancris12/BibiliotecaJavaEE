@@ -6,7 +6,7 @@ async function fetchLibros() {
         if (!response.ok) {
             throw new Error('No se pudo obtener la lista de libros.');
         }
-        const libros = await response.json(); // Convertir la respuesta a JSON
+        const libros = await response.json();
         displayLibros(libros);
     } catch (error) {
         console.error('Error al obtener la lista de libros:', error);

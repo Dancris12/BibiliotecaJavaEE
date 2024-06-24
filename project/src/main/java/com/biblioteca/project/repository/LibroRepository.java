@@ -8,5 +8,6 @@ public interface LibroRepository extends JpaRepository<Libro, Long> {
     /*
         @SuppressWarnings("null")
         @Override
-        List<Libro> findAll();*/
+        List<Libro> findAll();
+    */
 }

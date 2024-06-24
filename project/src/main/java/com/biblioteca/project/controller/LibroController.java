@@ -18,7 +18,7 @@ import com.biblioteca.project.repository.LibroRepository;
 
 @RestController
 @RequestMapping("/api/libros")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class LibroController {
 
     @Autowired

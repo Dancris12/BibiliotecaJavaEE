@@ -21,6 +21,6 @@ echo "# ProyectoFinaljavaEE" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Dancris12/ProyectoFinaljavaEE.git
-git push -u origin main
+git branch -M gh_pages
+git remote add origin https://github.com/Dancris12/BibiliotecaJavaEE.git
+git push -u origin gh_pages
