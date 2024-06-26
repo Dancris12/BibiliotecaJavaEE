@@ -42,10 +42,9 @@ public class LibroController {
     @PutMapping("/{id}")
     public Libro updateLibro(@PathVariable Long id, @RequestBody Libro libroDetails) {
         Libro libro = libroRepository.findById(id).orElseThrow();
-        libro.setTitulo(libroDetails.getTitulo());
+        libro.setTitulo_libro(libroDetails.getTitulo_libro());
         libro.setAutor(libroDetails.getAutor());
-        libro.setAnio(libroDetails.getAnio());
-        libro.setGenero(libroDetails.getGenero());
+        libro.setCantidad(libroDetails.getCantidad());
         return libroRepository.save(libro);
     }
 
