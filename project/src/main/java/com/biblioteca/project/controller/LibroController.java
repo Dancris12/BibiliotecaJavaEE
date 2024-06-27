@@ -35,12 +35,12 @@ public class LibroController {
     }
 
     @GetMapping("/{id}")
-    public Libro getLibroById(@PathVariable Long id) {
+    public Libro getLibroById(@PathVariable Integer id) {
         return libroRepository.findById(id).orElseThrow();
     }
 
     @PutMapping("/{id}")
-    public Libro updateLibro(@PathVariable Long id, @RequestBody Libro libroDetails) {
+    public Libro updateLibro(@PathVariable Integer id, @RequestBody Libro libroDetails) {
         Libro libro = libroRepository.findById(id).orElseThrow();
         libro.setTitulo_libro(libroDetails.getTitulo_libro());
         libro.setAutor(libroDetails.getAutor());
@@ -49,7 +49,7 @@ public class LibroController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteLibro(@PathVariable Long id) {
+    public void deleteLibro(@PathVariable Integer id) {
         Libro libro = libroRepository.findById(id).orElseThrow();
         libroRepository.delete(libro);
     }

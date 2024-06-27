@@ -33,3 +33,9 @@ h1 {
 .form-control {
     border-color: dimgray;
 }
+
+.libros-tbody {
+    max-height: 50px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
